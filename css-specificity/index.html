@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concept of CSS Specificity </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main_div {
+            background: #000;
+            height: 200px;
+            width: 300px;
+            padding: 20px;
+        }
+
+        #main_div__btn__id a {
+            color: #f1c40f; /*id has more priority */
+        }
+
+        .main_div .center_div .btn a {
+            color: #2c3e50;
+        }
+
+        .main_div__btn a {
+            color: #fff;
+            font-weight: 300;
+        }
+
+        a {
+            color: #7f8c8d;
+        }
+
+        .btn__tag {
+            color: pink;
+        }
+        /*
+        The css at lowest has higer priority. 
+         universal< pseudo-element< class,pseudo-class or data-attribute<id < inline-style< !important
+        */
+    </style>
+</head>
+
+<body>
+    <header class="main_div">
+        <div class="center_div">
+            <div class="btn main_div__btn" id="main_div__btn__id"><a href="#" class="btn__tag">
+                    Preeti Sharma
+                </a></div>
+        </div>
+    </header>
+</body>
+
+</html>
