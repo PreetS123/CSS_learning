@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --width: 100vw;
+}
+
+.main_div {
+  background: #ccccff;
+  width: var(--width);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: coral;
+  text-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+  font-size: 5rem;
+}
+
+h1::after {
+    content: "\f005";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-style: normal;
+    width: calc(var(--width) - 80vw);
+    height: 25px;
+    color: #1abc9c;
+    display: block;
+    margin: 0 auto;
+    border-bottom: 5px solid #3498db;
+  }
