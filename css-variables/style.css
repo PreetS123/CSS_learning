@@ -12,6 +12,10 @@
 
 }
 
+::selection{
+    background: var(--yellow);
+    color: var(--dark_gray);
+}
 div{
     background: var(--indianRed);
     padding: 2%;
