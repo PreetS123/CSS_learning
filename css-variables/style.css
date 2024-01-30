@@ -1,0 +1,23 @@
+:root{
+    --white:#fff;
+    --black:#000;
+    --light_gray:#D7DBDD;
+    --dark_gray:#707B7C;
+    --gray:#CCCCFF;
+    --indianRed:#CD5C5C;
+    --yellow:#dfff00;
+    --sky_blue:#40E0D0;
+    --blue:#6495ed;
+    --pink:#DE3163;
+
+}
+
+div{
+    background: var(--indianRed);
+    padding: 2%;
+    border: 1px solid var(--gray);
+}
+
+h1,h2,h3{
+    color: var(--gray);
+}
